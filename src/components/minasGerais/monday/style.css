@@ -1,0 +1,92 @@
+.details input,
+.details span {
+  display: none;
+
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+}
+.details input:checked ~ span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+}
+.details em:after {
+  content: "Mais detalhes.";
+  cursor: pointer;
+}
+.details input:checked ~ em:after {
+  content: " ...Mostrar menos ";
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgrey;
+
+  padding: 40px;
+}
+.programsContainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+}
+.programName {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 28px;
+  color: #000;
+}
+
+.programHour {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: grey;
+}
+@media (max-width: 724px) {
+  .programsContainer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #16a085 0%,
+    #f4d03f 51%,
+    #d80515 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

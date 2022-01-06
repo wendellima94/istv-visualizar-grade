@@ -1,0 +1,44 @@
+header {
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+
+  background: linear-gradient(to right,  #ffff00ce 2%,#d80515 50%, #00b233 100%);
+  width: 100vw;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+
+/* background: linear-gradient(to right, rgb(3, 194, 228), #00b233,orange,#d80515, #ffff00ce, #00b233) */
+img {
+  width: auto;
+  height: 60px;
+}
+
+@media (max-width: 700px){
+  img {
+    width: auto;
+    height: 50px;
+  }
+
+  header {
+    height: 7rem;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
